@@ -121,7 +121,7 @@ def all_holidays_with_bbq(holiday_supplies)
     holiday_name_hash.each do |holiday_name, supplies_array|
       if supplies_array.include?("BBQ")
         binding.pry 
-        puts holiday_name
+        # puts holiday_name
       end
     end
   end
