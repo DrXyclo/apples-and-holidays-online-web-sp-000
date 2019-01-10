@@ -95,7 +95,7 @@ def all_winter_holiday_supplies(holiday_supplies)
     end
   end 
   end
-  holiday_supplies[:winter][:holiday_name]
+ puts holiday_supplies[:winter][:holiday_name]
 end
 
 all_winter_holiday_supplies(holiday_supplies)
