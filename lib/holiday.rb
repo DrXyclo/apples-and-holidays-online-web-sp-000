@@ -90,7 +90,7 @@ def all_winter_holiday_supplies(holiday_supplies)
     if season == :winter
      holiday_name.each do |name, stuff| 
        holiday_name.values.flatten
-       
+       binding.pry
      
     end
   end 
