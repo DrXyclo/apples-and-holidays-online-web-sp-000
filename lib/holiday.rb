@@ -86,7 +86,7 @@ holiday_supplies = {
      
 def all_winter_holiday_supplies(holiday_supplies)
   # return an array of all of the supplies that are used in the winter season
- winter_supply_array = holiday_supplies.each do |season, holiday_name|
+ winter_supply_array = holiday_supplies.collect do |season, holiday_name|
     if season == :winter
      holiday_name.each do |name, supply| 
         holiday_name.values.flatten
