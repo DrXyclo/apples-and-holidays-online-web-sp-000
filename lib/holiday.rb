@@ -95,7 +95,8 @@ def all_winter_holiday_supplies(holiday_supplies)
     end
   end 
   end
-  puts winter_supply_array.pop 
+  puts winter_supply_array.pop
+  puts winter_supply_array
  binding.pry
 end
 
