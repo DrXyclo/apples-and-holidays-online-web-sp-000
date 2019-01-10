@@ -97,40 +97,23 @@ end
 
 # all_winter_holiday_supplies(holiday_supplies)
 
-
-=begin  
-      @output = <<-TEXT
-Winter:
-  Christmas: Lights, Wreath
-  New Years: Party Hats
-Summer:
-  Fourth Of July: Fireworks, BBQ
-Fall:
-  Thanksgiving: Turkey
-Spring:
-  Memorial Day: BBQ
-TEXT
-end
-=end 
 def all_supplies_in_holidays(holiday_supplies)
-holiday_supplies.each do |season_hash, holiday_hash|
-  puts "#{season_hash.capitalize}:"
-  holiday_hash.each do |holiday_name, supplies_array|
-     # binding.pry 
-    holiday_name_string = holiday_name.to_s
-    holiday_name_array = holiday_name_string.split("_")
+  holiday_supplies.each do |season_hash, holiday_hash|
+    puts "#{season_hash.capitalize}:"
+  
+      holiday_hash.each do |holiday_name, supplies_array|
     
-    holiday_name_capitalize = holiday_name_array.map {|array_element| array_element.capitalize}
-    holiday_name_cap_join = holiday_name_capitalize.join(" ")
+        holiday_name_string = holiday_name.to_s
+        holiday_name_array = holiday_name_string.split("_")
     
-    # supplies_array.each do 
+        holiday_name_capitalize = holiday_name_array.map {|array_element| array_element.capitalize}
+        holiday_name_cap_join = holiday_name_capitalize.join(" ")
     
-  puts "  #{holiday_name_cap_join}: #{supplies_array.join(", ")}"
-   # binding.pry
+        puts "  #{holiday_name_cap_join}: #{supplies_array.join(", ")}"
+      end 
   end 
 end 
-end 
-all_supplies_in_holidays(holiday_supplies)
+# all_supplies_in_holidays(holiday_supplies)
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
