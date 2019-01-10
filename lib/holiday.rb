@@ -116,12 +116,12 @@ end
 # all_supplies_in_holidays(holiday_supplies)
 
 def all_holidays_with_bbq(holiday_supplies)
-
+  holiday_name_array = []
   holiday_supplies.each do |season_hash, holiday_name_hash|
     holiday_name_hash.each do |holiday_name, supplies_array|
       if supplies_array.include?("BBQ")
         # binding.pry 
-           holiday_name
+          holiday_name_array << holiday_name
       end
     end
   end
