@@ -87,10 +87,10 @@ holiday_supplies = {
 def all_winter_holiday_supplies(holiday_supplies)
   # return an array of all of the supplies that are used in the winter season
   winter_supply_array = holiday_supplies.flat_map do |season, holiday_name|
-                          season == :winter
-                            holiday_name.values.flatten 
+                          if season == :winter ? holiday_name.values.flatten : ""
                            
                         end
+                      end 
   
 
   #winter_supply_array.delete_if {|i| i == nil }
