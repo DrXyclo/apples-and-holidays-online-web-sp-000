@@ -90,14 +90,15 @@ def all_winter_holiday_supplies(holiday_supplies)
   holiday_supplies.each do |season, holiday_name|
                           if season == :winter
                             winter_supply_array << holiday_name.values.flatten
-                            winter_supply_array.flatten
-                           binding.pry 
+                            #winter_supply_array.flatten
+                          # binding.pry 
                         end
                       end 
   
 
   #winter_supply_array.delete_if {|i| i == nil }
 
+  winter_supply_array.flatten
   winter_supply_array
  binding.pry
 end
