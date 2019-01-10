@@ -89,7 +89,7 @@ def all_winter_holiday_supplies(holiday_supplies)
   winter_supply_array = holiday_supplies.flat_map do |season, holiday_name|
                           season == :winter
                             holiday_name.values.flatten 
-                          end 
+                           
                         end
   
 
