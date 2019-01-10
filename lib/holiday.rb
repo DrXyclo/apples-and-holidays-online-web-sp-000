@@ -117,7 +117,10 @@ holiday_supplies.each do |season_hash, holiday_hash|
   puts "#{season_hash.capitalize}:"
   holiday_hash.each do |holiday_name, supplies_array|
     binding.pry 
-    holiday_name_string = holiday_name.to_s 
+    holiday_name_string = holiday_name.to_s
+    holiday_name_array = holiday_name_string.split("_")
+    holiday_name_capitalize = holiday_name_array.capitalize 
+    
   puts "     #{holiday_name_string.capitalize}: #{supplies_array.to_s}"
   binding.pry
   end 
