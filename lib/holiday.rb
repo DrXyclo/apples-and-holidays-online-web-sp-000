@@ -89,13 +89,13 @@ def all_winter_holiday_supplies(holiday_supplies)
   holiday_supplies.each do |season, holiday_name|
     if season == :winter
      holiday_name.each do |name, supply| 
-       holiday_name.values.flatten
+       winter_supply_array = holiday_name.values.flatten
        # binding.pry
      
     end
   end 
   end
- puts holiday_supplies[:winter][:holiday_name]
+ puts winter_supply_array
  binding.pry
 end
 
