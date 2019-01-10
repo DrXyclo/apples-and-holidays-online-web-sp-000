@@ -96,6 +96,7 @@ def all_winter_holiday_supplies(holiday_supplies)
   end 
   end
  puts holiday_supplies[:winter][:holiday_name]
+ binding.pry
 end
 
 all_winter_holiday_supplies(holiday_supplies)
