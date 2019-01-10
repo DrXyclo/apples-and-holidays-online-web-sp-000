@@ -85,18 +85,14 @@ holiday_supplies = {
 =end 
      
 def all_winter_holiday_supplies(holiday_supplies)
-
   winter_supply_array = []
   holiday_supplies.each do |season, holiday_name|
-                          if season == :winter
-                            winter_supply_array << holiday_name.values.flatten
-                            #winter_supply_array.flatten
-                          # binding.pry 
-                        end
-                      end 
-
+    if season == :winter
+    winter_supply_array << holiday_name.values
+    end
+  end 
  return winter_supply_array.flatten
- binding.pry
+ # binding.pry
 end
 
 all_winter_holiday_supplies(holiday_supplies)
