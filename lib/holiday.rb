@@ -93,7 +93,7 @@ def all_winter_holiday_supplies(holiday_supplies)
                         end
   
   # winter_supply_array.flatten
-  winter_supply_array_delete if do {|i| i == nil }
+  winter_supply_array_delete_if {|i| i == nil }
   # winter_supply_array.pop                     
   # winter_supply_array.pop
   winter_supply_array
