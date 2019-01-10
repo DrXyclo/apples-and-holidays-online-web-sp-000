@@ -98,8 +98,8 @@ def all_winter_holiday_supplies(holiday_supplies)
 
   #winter_supply_array.delete_if {|i| i == nil }
 
-  winter_supply_array.flatten
- return winter_supply_array
+  # winter_supply_array.flatten
+ return winter_supply_array.flatten
  binding.pry
 end
 
