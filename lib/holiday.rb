@@ -125,7 +125,7 @@ holiday_supplies.each do |season_hash, holiday_hash|
     
     # supplies_array.each do 
     
-  puts "  #{holiday_name_cap_join}: #{supplies_array.join(" ")}"
+  puts "  #{holiday_name_cap_join}: #{supplies_array.join(", ")}"
    # binding.pry
   end 
 end 
