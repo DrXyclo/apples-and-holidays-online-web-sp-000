@@ -123,7 +123,7 @@ holiday_supplies.each do |season_hash, holiday_hash|
     holiday_name_capitalize = holiday_name_array.map {|array_element| array_element.capitalize}
     holiday_name_cap_join = holiday_name_capitalize.join(" ")
     
-  puts "     #{holiday_name_cap_join}: #{supplies_array.to_s}"
+  puts "  #{holiday_name_cap_join}: #{supplies_array.to_s}"
  #  binding.pry
   end 
 end 
