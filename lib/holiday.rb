@@ -91,6 +91,10 @@ def all_winter_holiday_supplies(holiday_supplies)
                             holiday_name.values.flatten 
                           end 
                         end
+  
+  winter_supply_array.pop
+  winter_supply_array.pop
+  winter_supply_array.pop                     
   winter_supply_array
  binding.pry
 end
