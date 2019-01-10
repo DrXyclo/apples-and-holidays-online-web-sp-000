@@ -97,8 +97,8 @@ end
 
 # all_winter_holiday_supplies(holiday_supplies)
 
-def all_supplies_in_holidays(holiday_hash)
-  
+
+=begin  
       @output = <<-TEXT
 Winter:
   Christmas: Lights, Wreath
@@ -110,8 +110,14 @@ Fall:
 Spring:
   Memorial Day: BBQ
 TEXT
-
 end
+=end 
+def all_supplies_in_holidays(holiday_supplies)
+holiday_supplies.each do |season_hash, holiday_name|
+  puts season_hash
+  puts holiday_name
+end 
+all_supplies_in_holidays(holiday_supplies)
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
