@@ -117,6 +117,7 @@ holiday_supplies.each do |season_hash, holiday_name|
   puts season_hash
   puts holiday_name
 end 
+end 
 all_supplies_in_holidays(holiday_supplies)
 
 def all_holidays_with_bbq(holiday_hash)
