@@ -114,7 +114,7 @@ end
 =end 
 def all_supplies_in_holidays(holiday_supplies)
 holiday_supplies.each do |season_hash, holiday_hash|
-  puts "#{season_hash.capitilize}:"
+  puts "#{season_hash.capitalize}:"
   holiday_hash.each do |holiday_name, supplies_array|
     puts "#{holiday_name}: #{supplies_array.to_s}"
   end 
