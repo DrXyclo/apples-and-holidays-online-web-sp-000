@@ -116,7 +116,7 @@ def all_supplies_in_holidays(holiday_supplies)
 holiday_supplies.each do |season_hash, holiday_hash|
   puts "#{season_hash.capitalize}:"
   holiday_hash.each do |holiday_name, supplies_array|
-     binding.pry 
+     # binding.pry 
     holiday_name_string = holiday_name.to_s
     holiday_name_array = holiday_name_string.split("_")
     
@@ -126,7 +126,7 @@ holiday_supplies.each do |season_hash, holiday_hash|
     # supplies_array.each do 
     
   puts "  #{holiday_name_cap_join}: #{supplies_array[0]}, #{supplies_array[1]}"
-   binding.pry
+   # binding.pry
   end 
 end 
 end 
