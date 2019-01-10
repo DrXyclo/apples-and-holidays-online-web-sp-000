@@ -125,7 +125,7 @@ def all_holidays_with_bbq(holiday_supplies)
       end
     end
   end
-  puts holiday_name_array 
+  print holiday_name_array 
 end
 all_holidays_with_bbq(holiday_supplies)
 
