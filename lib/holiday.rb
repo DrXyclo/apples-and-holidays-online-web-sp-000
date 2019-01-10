@@ -93,12 +93,12 @@ def all_winter_holiday_supplies(holiday_supplies)
        # holiday_name.values.flatten 
        # binding.pry
      
-    end
+    
   end 
   end
 
   #  winter_supply_array
- binding.pry
+ # binding.pry
 end
 
 all_winter_holiday_supplies(holiday_supplies)
