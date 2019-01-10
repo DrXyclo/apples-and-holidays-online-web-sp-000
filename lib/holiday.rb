@@ -117,6 +117,7 @@ holiday_supplies.each do |season_hash, holiday_hash|
   puts "#{season_hash}:"
   holiday_name.each do |holiday_name, supplies_array|
     puts "#{holiday_name}: #{supplies_array.to_s}"
+  end 
 end 
 end 
 all_supplies_in_holidays(holiday_supplies)
